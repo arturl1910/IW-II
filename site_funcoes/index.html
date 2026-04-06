@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios JavaScript</title>
+    <link href="bootstrap-5.3.8-dist/css/bootstrap.css" rel="stylesheet">
+    <link href="estilo.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container py-5">
+        <h1 class="text-center mb-5">Exercicios de JavaScript</h1>
+        
+        <!-- Exercicio 1: Par ou Impar -->
+        <div class="card">
+            <div class="card-header">
+                <h5>Exercicio 1: Par ou Impar</h5>
+            </div>
+            <div class="card-body">
+                <p>Peca um numero ao usuario e exiba se ele e par ou impar.</p>
+                <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#codigo1">verificar</button>
+                <div class="collapse mt-3" id="codigo1">
+                    <pre id="pre1"></pre>
+                    <div class="mt-3">
+                        <input type="number" id="input1" class="form-control mb-2" placeholder="Digite um numero">
+                        <button class="btn btn-success" onclick="executar1()">Executar</button>
+                        <div class="resultado" id="resultado1"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Exercicio 2: Verificacao de Maioridade -->
+        <div class="card">
+            <div class="card-header">
+                <h5>Exercicio 2: Verificacao de Maioridade</h5>
+            </div>
+            <div class="card-body">
+                <p>Solicite a idade do usuario e informe se ele e maior de idade (18 anos ou mais) ou menor de idade.</p>
+                <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#codigo2">verificar</button>
+                <div class="collapse mt-3" id="codigo2">
+                    <pre id="pre2"></pre>
+                    <div class="mt-3">
+                        <input type="number" id="input2" class="form-control mb-2" placeholder="Digite sua idade">
+                        <button class="btn btn-success" onclick="executar2()">Executar</button>
+                        <div class="resultado" id="resultado2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Exercicio 3: Contagem de 1 a 10 -->
+        <div class="card">
+            <div class="card-header">
+                <h5>Exercicio 3: Contagem de 1 a 10</h5>
+            </div>
+            <div class="card-body">
+                <p>Exiba os numeros de 1 a 10 no console usando um laco for.</p>
+                <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#codigo3">verificar</button>
+                <div class="collapse mt-3" id="codigo3">
+                    <pre id="pre3"></pre>
+                    <div class="mt-3">
+                        <button class="btn btn-success" onclick="executar3()">Executar</button>
+                        <div class="resultado" id="resultado3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Exercicio 4: Contagem Regressiva -->
+        <div class="card">
+            <div class="card-header">
+                <h5>Exercicio 4: Contagem Regressiva</h5>
+            </div>
+            <div class="card-body">
+                <p>Peca um numero ao usuario e exiba uma contagem regressiva ate 0 usando um while.</p>
+                <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#codigo4">verificar</button>
+                <div class="collapse mt-3" id="codigo4">
+                    <pre id="pre4"></pre>
+                    <div class="mt-3">
+                        <input type="number" id="input4" class="form-control mb-2" placeholder="Digite um numero">
+                        <button class="btn btn-success" onclick="executar4()">Executar</button>
+                        <div class="resultado" id="resultado4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Exercicio 5: Tabuada -->
+        <div class="card">
+            <div class="card-header">
+                <h5>Exercicio 5: Tabuada</h5>
+            </div>
+            <div class="card-body">
+                <p>Peca um numero e exiba a tabuada de 1 a 10 usando um laco for.</p>
+                <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#codigo5">verificar</button>
+                <div class="collapse mt-3" id="codigo5">
+                    <pre id="pre5"></pre>
+                    <div class="mt-3">
+                        <input type="number" id="input5" class="form-control mb-2" placeholder="Digite um numero">
+                        <button class="btn btn-success" onclick="executar5()">Executar</button>
+                        <div class="resultado" id="resultado5" style="white-space: pre-line;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Exercicio 6: Somatorio -->
+        <div class="card">
+            <div class="card-header">
+                <h5>Exercicio 6: Somatorio</h5>
+            </div>
+            <div class="card-body">
+                <p>Solicite um numero e some todos os numeros de 1 ate ele.</p>
+                <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#codigo6">verificar</button>
+                <div class="collapse mt-3" id="codigo6">
+                    <pre id="pre6"></pre>
+                    <div class="mt-3">
+                        <input type="number" id="input6" class="form-control mb-2" placeholder="Digite um numero">
+                        <button class="btn btn-success" onclick="executar6()">Executar</button>
+                        <div class="resultado" id="resultado6"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Exercicio 7: Numero Primo -->
+        <div class="card">
+            <div class="card-header">
+                <h5>Exercicio 7: Numero Primo</h5>
+            </div>
+            <div class="card-body">
+                <p>Peca um numero ao usuario e informe se ele e primo ou nao.</p>
+                <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#codigo7">verificar</button>
+                <div class="collapse mt-3" id="codigo7">
+                    <pre id="pre7"></pre>
+                    <div class="mt-3">
+                        <input type="number" id="input7" class="form-control mb-2" placeholder="Digite um numero">
+                        <button class="btn btn-success" onclick="executar7()">Executar</button>
+                        <div class="resultado" id="resultado7"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Exercicio 8: Login Simples -->
+        <div class="card">
+            <div class="card-header">
+                <h5>Exercicio 8: Login Simples</h5>
+            </div>
+            <div class="card-body">
+                <p>Peca ao usuario um nome de usuario e uma senha. Se ele errar, peca novamente ate acertar.</p>
+                <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#codigo8">verificar</button>
+                <div class="collapse mt-3" id="codigo8">
+                    <pre id="pre8"></pre>
+                    <div class="mt-3">
+                        <input type="text" id="input8a" class="form-control mb-2" placeholder="Digite o usuario">
+                        <input type="password" id="input8b" class="form-control mb-2" placeholder="Digite a senha">
+                        <button class="btn btn-success" onclick="executar8()">Executar</button>
+                        <div class="resultado" id="resultado8"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Exercicio 9: Soma de Numeros Positivos -->
+        <div class="card">
+            <div class="card-header">
+                <h5>Exercicio 9: Soma de Numeros Positivos</h5>
+            </div>
+            <div class="card-body">
+                <p>Peca ao usuario varios numeros e some-os ate que ele digite um numero negativo, entao exiba o total.</p>
+                <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#codigo9">verificar</button>
+                <div class="collapse mt-3" id="codigo9">
+                    <pre id="pre9"></pre>
+                    <div class="mt-3">
+                        <button class="btn btn-success" onclick="executar9()">Executar</button>
+                        <div class="resultado" id="resultado9"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Exercicio 10: Adivinhacao -->
+        <div class="card">
+            <div class="card-header">
+                <h5>Exercicio 10: Adivinhacao</h5>
+            </div>
+            <div class="card-body">
+                <p>Escolha um numero aleatorio de 1 a 10 e peca ao usuario para adivinhar. De dicas ate ele acertar.</p>
+                <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#codigo10">verificar</button>
+                <div class="collapse mt-3" id="codigo10">
+                    <pre id="pre10"></pre>
+                    <div class="mt-3">
+                        <input type="number" id="input10" class="form-control mb-2" placeholder="Digite seu palpite (1 a 10)">
+                        <button class="btn btn-success" onclick="executar10()">Executar</button>
+                        <button class="btn btn-warning" onclick="novoJogo()">Novo Jogo</button>
+                        <div class="resultado" id="resultado10"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Exercicio 11: Calculo de Fatorial -->
+        <div class="card">
+            <div class="card-header">
+                <h5>Exercicio 11: Calculo de Fatorial</h5>
+            </div>
+            <div class="card-body">
+                <p>Peca um numero e exiba seu fatorial (n!).</p>
+                <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#codigo11">verificar</button>
+                <div class="collapse mt-3" id="codigo11">
+                    <pre id="pre11"></pre>
+                    <div class="mt-3">
+                        <input type="number" id="input11" class="form-control mb-2" placeholder="Digite um numero">
+                        <button class="btn btn-success" onclick="executar11()">Executar</button>
+                        <div class="resultado" id="resultado11"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Exercicio 12: Validacao de Nota -->
+        <div class="card">
+            <div class="card-header">
+                <h5>Exercicio 12: Validacao de Nota</h5>
+            </div>
+            <div class="card-body">
+                <p>Peca uma nota de 0 a 10 e continue pedindo ate que o usuario insira um valor valido.</p>
+                <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#codigo12">verificar</button>
+                <div class="collapse mt-3" id="codigo12">
+                    <pre id="pre12"></pre>
+                    <div class="mt-3">
+                        <input type="number" id="input12" class="form-control mb-2" placeholder="Digite uma nota (0 a 10)">
+                        <button class="btn btn-success" onclick="executar12()">Executar</button>
+                        <div class="resultado" id="resultado12"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Exercicio 13: Media de Notas -->
+        <div class="card">
+            <div class="card-header">
+                <h5>Exercicio 13: Media de Notas</h5>
+            </div>
+            <div class="card-body">
+                <p>Peca 3 notas ao usuario, calcule e exiba sua media. Informe se ele foi aprovado (media >= 7) ou reprovado.</p>
+                <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#codigo13">verificar</button>
+                <div class="collapse mt-3" id="codigo13">
+                    <pre id="pre13"></pre>
+                    <div class="mt-3">
+                        <input type="number" id="input13a" class="form-control mb-2" placeholder="Nota 1">
+                        <input type="number" id="input13b" class="form-control mb-2" placeholder="Nota 2">
+                        <input type="number" id="input13c" class="form-control mb-2" placeholder="Nota 3">
+                        <button class="btn btn-success" onclick="executar13()">Executar</button>
+                        <div class="resultado" id="resultado13" style="white-space: pre-line;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Exercicio 14: Caixa Eletronico -->
+        <div class="card">
+            <div class="card-header">
+                <h5>Exercicio 14: Caixa Eletronico</h5>
+            </div>
+            <div class="card-body">
+                <p>Peca um valor ao usuario e informe as possiveis cedulas para saque (100, 50, 20, 10, 5, 2, 1).</p>
+                <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#codigo14">verificar</button>
+                <div class="collapse mt-3" id="codigo14">
+                    <pre id="pre14"></pre>
+                    <div class="mt-3">
+                        <input type="number" id="input14" class="form-control mb-2" placeholder="Digite o valor para saque">
+                        <button class="btn btn-success" onclick="executar14()">Executar</button>
+                        <div class="resultado" id="resultado14" style="white-space: pre-line;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Exercicio 15: Numeros Impares -->
+        <div class="card">
+            <div class="card-header">
+                <h5>Exercicio 15: Numeros Impares</h5>
+            </div>
+            <div class="card-body">
+                <p>Peca um numero ao usuario e exiba todos os numeros impares de 1 ate esse numero.</p>
+                <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#codigo15">verificar</button>
+                <div class="collapse mt-3" id="codigo15">
+                    <pre id="pre15"></pre>
+                    <div class="mt-3">
+                        <input type="number" id="input15" class="form-control mb-2" placeholder="Digite um numero">
+                        <button class="btn btn-success" onclick="executar15()">Executar</button>
+                        <div class="resultado" id="resultado15"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-1">&copy; Feito por Artur Miguel e Pietro Rodrigues</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.js"></script>
+    <script src="exercicios.js"></script>
+</body>
+</html>
