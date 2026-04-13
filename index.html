@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao DOM</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Introdução ao DOM</h1>
+    <h4>Objetivo : Compreender o que é o DOM e como o JavaScript interage com elementos HTML.</h4>
+    <h3>Pesquisa</h3>
+    <p class="meu-texto">1. O que é DOM? Explique com suas palavras e a relação com HTML. </p>
+    <p>O DOM (Document Object Model) é uma representação estruturada de uma página web que o navegador cria a partir do código HTML, organizando todos os elementos em forma de uma árvore de objetos que podem ser acessados e manipulados; enquanto o HTML define a estrutura inicial da página com suas tags e conteúdos, o DOM transforma essa estrutura em objetos que permitem interação dinâmica, ou seja, por meio dele linguagens como JavaScript conseguem modificar textos, alterar estilos, adicionar ou remover elementos e responder a eventos, fazendo com que a página deixe de ser estática e se torne interativa.
+    </p>
+    <br>
+    <p class="meu-texto">2. O que é um nó (node)? Explique elementos, atributos e textos. </p>
+    <p>Um nó (node) é cada parte individual que compõe o DOM, ou seja, cada item da estrutura da página é considerado um nó; os elementos são nós que representam as partes da estrutura da página, como títulos, parágrafos e divisões, formando a base do conteúdo; os atributos são informações adicionais desses elementos, como identificadores ou classes, que servem para configurar ou diferenciar cada parte; e os nós de texto são o conteúdo escrito dentro desses elementos, ou seja, aquilo que aparece para o usuário na página, sendo também tratados como nós dentro da árvore do DOM.
+    </p>
+    <br>
+    <p class="meu-texto">3. Explique os métodos: getElementById(), querySelector(), querySelectorAll().</p>
+    <p>Os métodos getElementById(), querySelector() e querySelectorAll() são usados para selecionar elementos do DOM; o getElementById() serve para buscar um único elemento pelo seu identificador (id), sendo direto e rápido, retornando apenas um elemento; o querySelector() é mais flexível, pois permite selecionar o primeiro elemento que corresponda a um seletor CSS, como classe, id ou tipo de elemento; já o querySelectorAll() retorna todos os elementos que correspondem a um seletor CSS, trazendo uma lista desses elementos, que pode ser percorrida para manipular vários itens ao mesmo tempo.
+    </p>
+    <br>
+    <p class="meu-texto">4. Diferença entre innerHTML e innerText. </p>
+    <p>A diferença entre innerHTML e innerText está na forma como manipulam o conteúdo de um elemento no DOM; o innerHTML permite acessar ou alterar o conteúdo incluindo a estrutura interna, ou seja, ele interpreta e lê HTML, podendo adicionar ou modificar elementos dentro de outro elemento; já o innerText trabalha apenas com o texto visível para o usuário, ignorando qualquer marcação HTML e considerando apenas o conteúdo textual, sem interpretar tags ou estrutura.
+    </p>
+    <p class="meu-texto">5. O que são eventos? Exemplos: onclick, onchange, onmouseover.   </p>
+    <p>Eventos são ações ou ocorrências que acontecem na página e que podem ser detectadas pelo JavaScript para executar alguma função, geralmente causadas pela interação do usuário ou pelo próprio navegador; por exemplo, onclick acontece quando o usuário clica em um elemento, onchange ocorre quando o valor de um campo é alterado, como em um input ou select, e onmouseover é acionado quando o usuário passa o mouse sobre um elemento, permitindo criar interações dinâmicas na página.</p>
+    <h2>Atividade</h2>
+    <section id="pratica">
+    <h2>Prática</h2>
+    <p id="texto">Texto original</p>
+    
+    <button onclick="mudarTexto()">Clique aqui</button>
+
+    <script>
+        function mudarTexto() {
+            document.getElementById("texto").innerText = "Texto alterado!";
+        }
+    </script>
+    </section>
+
+    <section>
+        <h1>Contador</h1>
+        <p id="numero">0</p>
+        <button onclick="somar()">Somar +1</button>
+    </section>
+    
+    <section>
+        <h1>Cor de Fundo</h1>
+        <button onclick="mudarCor()">Mudar Cor</button>
+    </section>
+    
+    <script>
+        let contagem = 0;
+        function somar() {
+            contagem = contagem + 1;
+            document.getElementById("numero").innerText = contagem;
+        }
+    
+        let cores = ["lightblue", "lightgreen", "pink", "yellow", "#e8ecef"];
+        let posicao = 0;
+    
+        function mudarCor() {
+            document.body.style.backgroundColor = cores[posicao];
+            
+            posicao = posicao + 1;
+    
+            if (posicao == cores.length) {
+                posicao = 0;
+            }
+        }
+    </script>
+</body>
+</html>
