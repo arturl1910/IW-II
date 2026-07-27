@@ -1,0 +1,39 @@
+{
+  "personagem": 
+  {
+    "nome": "Pantera negra (T'Challa) ",
+    "franquia": "Marvel Comics",
+    "origem": "Wakanda",
+    "primeira_aparicao": "Fantastic Four #52, publicada em julho de 1966",
+    "perfil_fisico": {
+      "altura": "Aprox. 1.83m",
+      "porte_fisico": "Massivo / Musculoso",
+      "marca_registrada": "Traje de pantera",
+      "item_alternativo": "Vibranium Antártico: Uma variação do metal nativo do herói com propriedades de anti-metal"
+    }
+    ,
+    "atributos_sobrehumanos": 
+    {
+
+      "Força no ápice humano/sobre-humana": "Capacidade de levantar centenas de quilos e desferir golpes devastadores.",
+      "Agilidade e reflexos": "Tempo de reação superior ao de atletas de elite, permitindo desviar de ataques rápidos.",
+      "Sentidos aguçados:": " Visão noturna refinada, audição ampla e olfato capaz de memorizar e rastrear milhares de odores.",
+      "Intelecto genial": "Mente brilhante equiparada aos maiores cientistas do mundo, com foco em engenharia e tática."
+    },
+    "combate": {
+      "arma_favorita": "Garras retráteis: Lâminas de vibranium nas luvas capazes de rasgar metais e ferir inimigos com facilidade",
+      "estilo": "Combate corpo a corpo: Mestre em artes marciais globais e combate armado, além de especialista em furtividade.",
+      "fraqueza_notavel": "Vulnerabilidade a ataques sônicos extremos."
+    },
+    "psicologia": {
+      "motivacao": "Proteger a nação de Wakanda, honrar seus ancestrais e decidir como usar o poder e a tecnologia do seu povo para ajudar o resto do mundo com justiça e sabedoria",
+      "gatilho_sonoro": "Sons de vibração e impacto inspirados na tecnologia de Wakanda e na cultura africana dos filmes."
+    },
+    "variantes": [
+      "Pantera Fantasma",
+      "Pantera Negra do Mangaverse",
+      "T'Chaka II (Coal Tiger)",
+      "T'Challa Jr. (T'Neptune)"
+    ]
+  }
+}
